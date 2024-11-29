@@ -294,4 +294,4 @@ with video_sink:
         video_sink.write_frame(annotated_frame)
 ```
 
-[![Result video](https://storage4.fastupload.io/cache/plugins/filepreviewer/1052776/1a7ad703ff7d996a3bf72ce6d5f6ad63e94c7ab18c6a17c93bf8dc32ddece3e9/1100x800_cropped.jpg)](https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/blob/main/result_clips/result.mp4)
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1034625565?h=4b876b7c2b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Football players, ball and referee detection"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
