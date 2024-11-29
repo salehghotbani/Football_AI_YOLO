@@ -3,9 +3,5 @@ football
 runs
 FootbalRoboflow.iml
 0.23.0
-clips/download.mp4
-clips/download2.mp4
-clips/download3.mp4
-clips/download4.mp4
+clips
 datasets/yolo11n.pt
-result_clips
