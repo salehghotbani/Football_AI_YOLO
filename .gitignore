@@ -1,11 +1,11 @@
 .idea
 football
 runs
-download.mp4
-download_3.mp4
-download_result.mp4
-download_result2.mp4
 FootbalRoboflow.iml
-yolo11n.pt
-yolo11x.pt
 0.23.0
+clips/download.mp4
+clips/download2.mp4
+clips/download3.mp4
+clips/download4.mp4
+datasets/yolo11n.pt
+result_clips
