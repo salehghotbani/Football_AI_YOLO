@@ -3,10 +3,13 @@
 - Using `roboflow` to create dataset
 - Using `YOLO` to train model and detect players and ball
 - Using `supervision` to visualize boxes around detected objects and set label for them
+
 ---
 
 ### Install pytorch compatible with `CUDA`
-#### First of all download and install `CUDA toolkit` compatible with your Nvidia graphics card from [this link](https://developer.nvidia.com/cuda-downloads)
+
+#### First of all download and install
+`CUDA toolkit` compatible with your Nvidia graphics card from [this link](https://developer.nvidia.com/cuda-downloads)
 
 #### Then install `pytorch` from [this way](https://pytorch.org/get-started/locally/):
 
@@ -17,6 +20,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 
 ---
+
 ### Verify Nvidia is access
 
 ```commandline
@@ -24,6 +28,7 @@ nvidia-smi
 ```
 
 -----
+
 ### install required packages
 
 ```commandline
@@ -31,16 +36,21 @@ pip install -q ultralytics roboflow supervision
 ```
 
 ---
+
 ### Download ball, players and referee detection dataset from [this link](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc)
 
 ![installing pytorch compatible to CUDA platform](https://storage4.fastupload.io/cache/plugins/filepreviewer/1052707/653f60f51208aca0f168a58b3ec75bcef3dd428b26861d9dc37b3e69f7566bca/1100x800_cropped.jpg)
 
 ---
+
 ### Download base model of `YOLO` form [this link](https://docs.ultralytics.com/tasks/detect/#models)
+
 ![models image](https://storage6.fastupload.io/cache/plugins/filepreviewer/1052706/9695a0099b9f2d20a6aec3a756c7bcd120848585c9bf90eb33e72a69599ef4ed/1100x800_cropped.jpg)
+
 #### I used `YOLO11s`
 
 ---
+
 ### Imports
 
 ``` python
@@ -54,6 +64,7 @@ import supervision as sv
 ```
 
 ---
+
 ### Predefined Variables
 
 ```python
@@ -62,6 +73,7 @@ DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 ```
 
 ---
+
 ### Train model to detect `players`, `ball` and `referee`
 
 ```python
@@ -70,6 +82,7 @@ base_model.train(data=f"{HOME}/football/data.yaml", epochs=50, batch=8, imgsz=12
 ```
 
 --------
+
 ### Validate trained model
 
 ```python
@@ -84,6 +97,7 @@ SOURCE_VIDEO_PATH = f"{HOME}\clips\download2.mp4"
 ```
 
 ---
+
 ### Download football match clips
 
 - https://drive.google.com/uc?id=12TqauVZ9tLAv8kWxTTBFWtgt2hNQ4_ZF
@@ -93,6 +107,7 @@ SOURCE_VIDEO_PATH = f"{HOME}\clips\download2.mp4"
 - https://drive.google.com/uc?id=1vVwjW1dE1drIdd4ZSILfbCGPD4weoNiu
 
 ---
+
 ### Object IDs
 
 ```python
@@ -103,6 +118,7 @@ REFEREE_ID = 3
 ```
 
 ---
+
 ### Detect `players`, `ball` and `referee` just using `YOLO`
 
 ```python
@@ -111,6 +127,7 @@ result = model(source=SOURCE_VIDEO_PATH, show=True, conf=0.4, save=True)
 ```
 
 ---
+
 ### Collect Crops Of Players
 
 ```python
@@ -141,6 +158,7 @@ sv.plot_images_grid(crops[:100], grid_size=(10, 10))
 ```
 
 ---
+
 ### Team Classification
 
 ```commandline
@@ -275,3 +293,5 @@ with video_sink:
 
         video_sink.write_frame(annotated_frame)
 ```
+
+[![Result video](https://storage4.fastupload.io/cache/plugins/filepreviewer/1052776/1a7ad703ff7d996a3bf72ce6d5f6ad63e94c7ab18c6a17c93bf8dc32ddece3e9/1100x800_cropped.jpg)](https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/blob/main/result_clips/result.mp4)
