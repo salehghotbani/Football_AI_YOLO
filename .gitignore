@@ -2,7 +2,7 @@
 .idea
 runs
 ./clips
-result_clips
+./result_clips
 football
 fieldDetection
 

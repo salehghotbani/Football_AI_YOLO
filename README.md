@@ -1,4 +1,4 @@
-# Detect and track players, ball and referee in football match using `YOLO v11`, `roboflow` and `supervision` packages.
+## Detect and track players, ball and referee in football match using `YOLO v11`, `roboflow` and `supervision` packages.
 
 ### The result of player, referee and ball detection
 
