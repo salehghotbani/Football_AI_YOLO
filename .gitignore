@@ -1,10 +1,14 @@
+# Directories
 .idea
 runs
+clips
+result_clips
+football
+fieldDetection
+
+# Files
 FootbalRoboflow.iml
 0.23.0
-clips
 datasets/yolo11n.pt
 yolo*.pt
 *.py
-football
-fieldDetection

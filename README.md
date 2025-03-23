@@ -13,7 +13,7 @@
 
 #### Then install `pytorch` from [this way](https://pytorch.org/get-started/locally/):
 
-![installing pytorch compatible to CUDA platform](https://storage4.fastupload.io/cache/plugins/filepreviewer/1052705/8017b8ce4f4a0e776cea0e8a587c715f726898722aa25e17f183bb5bd0173e56/1100x800_cropped.jpg)
+![installing pytorch compatible to CUDA platform](/docs/images/torch.png)
 
 ```commandline
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
@@ -39,13 +39,13 @@ pip install -q ultralytics roboflow supervision
 
 ### Download ball, players and referee detection dataset from [this link](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc)
 
-![installing pytorch compatible to CUDA platform](https://storage4.fastupload.io/cache/plugins/filepreviewer/1052707/653f60f51208aca0f168a58b3ec75bcef3dd428b26861d9dc37b3e69f7566bca/1100x800_cropped.jpg)
+![player_dataset](/docs/images/player_dataset.png)
 
 ---
 
 ### Download base model of `YOLO` form [this link](https://docs.ultralytics.com/tasks/detect/#models)
 
-![models image](https://storage6.fastupload.io/cache/plugins/filepreviewer/1052706/9695a0099b9f2d20a6aec3a756c7bcd120848585c9bf90eb33e72a69599ef4ed/1100x800_cropped.jpg)
+![models image](/docs/images/yolo.png)
 
 #### I used `YOLO11s`
 
