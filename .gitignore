@@ -1,8 +1,8 @@
 # Directories
 .idea
 runs
-./clips
-./result_clips
+clips
+result_clips
 football
 fieldDetection
 
