@@ -2,10 +2,8 @@
 
 ### The result of player, referee and ball detection
 
-<video src="https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/raw/main/docs/clips/result_team_classification.gif" controls width="100%">
-</video>
+![Result Team Classification](https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/raw/main/docs/clips/result_team_classification.gif)
 
 ### The result of pitch pose estimation
 
-<video src="https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/raw/main/docs/clips/result_pitch.gif" controls width="100%">
-</video>
+![Result Team Classification](https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow/raw/main/docs/clips/result_pitch.gif)
