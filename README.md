@@ -7,7 +7,7 @@
 
 ## Detect and track players, ball and referee in football match using `YOLOv11`, `roboflow` and `supervision` packages.
 
-> The idea and main code of this project were provided by Roboflow. This project has only made minor modifications to it.
+> The idea and main code of this project were provided by Roboflow [Link](https://github.com/roboflow/notebooks/blob/main/notebooks/football-ai.ipynb). This project has only made minor modifications to it.
 
 ### The result of player, referee and ball detection
 
