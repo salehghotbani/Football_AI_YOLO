@@ -10,5 +10,5 @@ fieldDetection
 FootbalRoboflow.iml
 0.23.0
 datasets/yolo11n.pt
-yolo*.pt
+*.pt
 *.py
